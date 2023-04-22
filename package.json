@@ -1,7 +1,7 @@
 {
   "name": "@web-atoms/typescript-and-http-server",
   "description": "Web Atoms Development server",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "dependencies": {
     "http-server": "^14.1.1",
     "typescript": "^5.0.4"
