@@ -1,6 +1,6 @@
 var spawn = require('child_process').spawn;
 
-const spwanDetached = (prefix, cmd, params) => {
+const spawnDetached = (prefix, cmd, params) => {
     const proc = spawn(cmd, params, {
         detached: true
     });
@@ -10,5 +10,5 @@ const spwanDetached = (prefix, cmd, params) => {
     proc.stderr.on("data", (data) => console.error(`${prefix}${data}`));
 }
 
-spwanDetached("tsc ", 'tsc', ['--watch']);
-spwanDetached('http-server', []);
+spawnDetached("tsc ", 'tsc', ['--watch']);
+spawnDetached('hs', "http-server", []);
