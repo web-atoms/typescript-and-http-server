@@ -1,0 +1,18 @@
+{
+  "name": "@web-atoms/typescript-and-http-server",
+  "dependencies": {
+    "http-server": "^14.1.1",
+    "typescript": "^5.0.4"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 0",
+    "postversion": "git push --follow-tags"
+  },
+  "bin": {
+    "tsc-http-server": "./bin/tsch.js",
+    "tsch": "./bin/tsch.js"
+  },
+  "devDependencies": {
+    "@types/node": "^18.15.13"
+  }
+}
