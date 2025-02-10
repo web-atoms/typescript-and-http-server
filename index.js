@@ -12,3 +12,4 @@ const spawnDetached = (prefix, cmd, params) => {
 
 spawnDetached("tsc ", 'tsc', ['--watch']);
 spawnDetached('hs', "http-server", []);
+spawnDetached('jex', "", []);
